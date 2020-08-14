@@ -28,7 +28,7 @@ for it0 = 1:2
             grid_vals.BAf(it0,it1,it2) = sum(grid{it0,it1,it2}.x(1,[69:72])');
             grid_vals.BAp(it0,it1,it2) = max(sum(grid{it0,it1,it2}.x(grid{it0,it1,it2}.t<60,[69:72])'));
             grid_vals.BAr(it0,it1,it2) = grid_vals.BAp(it0,it1,it2) / grid_vals.BAf(it0,it1,it2);
-            grid_vals.GLP1(it0,it1,it2) = max(grid{it0,it1,it2}.x(grid{it0,it1,it2}.t<15,[114]));
+            grid_vals.GLP1(it0,it1,it2) = max(grid{it0,it1,it2}.x(grid{it0,it1,it2}.t<30,[114]));
         end
     end
 end
